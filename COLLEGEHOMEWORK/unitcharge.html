@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let bill;
+        let unit=prompt("Enter unit");
+        if(unit>=0 && unit<=100){
+            bill=unit*1.5;
+        }
+        if(unit>=101 && unit<=200){
+            bill=unit*2.5;
+        }
+        if(unit>=201 && unit<=300){
+            bill=unit*3.0;
+        }
+        if(unit>=301 && unit<=450){
+            bill=unit*4.5;
+        }
+        if(unit>450){
+            bill=unit*6;
+        }
+        alert(`the bill is ${bill}`);
+    </script>
+</body>
+</html>
